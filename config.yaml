@@ -1,7 +1,12 @@
 config:
   backup: true
+  banner: true
   create: true
   dotpath: .
+  ignoreempty: false
+  keepdot: false
+  longkey: false
+  showdiff: false
 dotfiles:
   f_ghostty:
     src: .config/ghostty/config.ghostty

@@ -1,14 +1,48 @@
-font-family = "JetBrainsMono Nerd Font"
-font-size = 12
+# Language
+language = "fr"
 
+# Font
+font-family = "Noto Sans Thai Looped Light"
+font-size = 12
+font-feature = -liga
+font-feature = -calt
+font-feature = -dlig
+
+# Colors
 theme = "Catppuccin Mocha"
 
-background-opacity = 0.9
+# Transparency and blur
+background-opacity = 0.3
 background-blur = true
+cursor-opacity = 0.5
+cursor-color = "#8940e2"
+alpha-blending = native
 
-window-padding-x = 10
-window-padding-y = 10
+# Aesthetic
+background = "#383b41"
+foreground = "#b2e0f0"
+window-padding-x = 15
+window-padding-y = 10 
+window-height = 25
+window-width = 90
 cursor-style = "block"
 cursor-style-blink = true
+adjust-cell-height = 9%
+mouse-scroll-multiplier = 0.5
+minimum-contrast = 2
+mouse-hide-while-typing = true
+bold-color = "#90AAF9"
 
-window-decoration = false
+# Bar
+title = "我是帅哥"
+window-title-font-family = "MonaLisa Variable"
+window-decoration = true
+
+# Shortcuts
+keybind = ctrl+t=new_tab
+keybind = ctrl+w=close_tab
+keybind = ctrl+tab=next_tab
+keybind = ctrl+shift+tab=previous_tab
+keybind = ctrl+shift+d=new_split:right
+keybind = ctrl+shift+e=new_split:down
+copy-on-select = clipboard

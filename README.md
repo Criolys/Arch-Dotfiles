@@ -1,4 +1,7 @@
+# My Arch Ricing
+
 # Using Dotdrop as dotfiles manager:  
+[Link to the dotdrop github] https://github.com/deadc0de6/dotdrop
 
 ## Installing (Arch Linux):  
 -*sudo pacman -S python-pipx*  
@@ -26,4 +29,3 @@ Or you can use git (before a commit):
 -*git restore [path of the file you want]*  
 If it's after your commit:  
 -Use *git log* and *git checkout [commit]*  
-If you're not sure about applying your config, do *dotdrop install -d*

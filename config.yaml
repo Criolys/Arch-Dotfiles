@@ -1,0 +1,18 @@
+config:
+  backup: true
+  create: true
+  dotpath: .
+dotfiles:
+  f_ghostty:
+    src: .config/ghostty/config.ghostty
+    dst: ~/.config/ghostty/config.ghostty
+  f_config.ghostty:
+    src: config/ghostty/config.ghostty
+    dst: ~/.config/ghostty/config.ghostty
+profiles:
+  home:
+    dotfiles:
+    - f_ghostty
+  -p home:
+    dotfiles:
+    - f_config.ghostty

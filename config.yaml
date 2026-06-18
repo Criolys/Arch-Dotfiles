@@ -14,10 +14,43 @@ dotfiles:
   f_config.ghostty:
     src: config/ghostty/config.ghostty
     dst: ~/.config/ghostty/config.ghostty
+  f_ml4w-wallpaper:
+    src: .config/ml4w/scripts/ml4w-wallpaper
+    dst: ~/.config/ml4w/scripts/ml4w-wallpaper
+  f_wallpaper-folder:
+    src: .config/ml4w/settings/wallpaper-folder
+    dst: ~/.config/ml4w/settings/wallpaper-folder
+  f_wallpaper-automation:
+    src: .config/ml4w/settings/wallpaper-folder
+    dst: ~/.config/ml4w/settings/wallpaper-automation
+  f_wallpaper-effect:
+    src: .config/ml4w/settings/wallpaper-folder
+    dst: ~/.config/ml4w/settings/wallpaper-effect
+  f_scripts_ml4w-wallpaper:
+    src: config/ml4w/scripts/ml4w-wallpaper
+    dst: ~/.config/ml4w/scripts/ml4w-wallpaper
+    chmod: '755'
+  f_settings_wallpaper-folder:
+    src: config/ml4w/settings/wallpaper-folder
+    dst: ~/.config/ml4w/settings/wallpaper-folder
+  f_settings_wallpaper-automation:
+    src: config/ml4w/settings/wallpaper-automation
+    dst: ~/.config/ml4w/settings/wallpaper-automation
+  f_settings_wallpaper-effect:
+    src: config/ml4w/settings/wallpaper-effect
+    dst: ~/.config/ml4w/settings/wallpaper-effect
 profiles:
   home:
     dotfiles:
     - f_ghostty
+    - f_ml4w-wallpaper
+    - f_wallpaper-folder
+    - f_wallpaper-automation
+    - f_wallpaper-effect
   -p home:
     dotfiles:
     - f_config.ghostty
+    - f_scripts_ml4w-wallpaper
+    - f_settings_wallpaper-folder
+    - f_settings_wallpaper-automation
+    - f_settings_wallpaper-effect

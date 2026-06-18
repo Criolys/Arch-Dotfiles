@@ -1,18 +1,19 @@
-# Language
-language = "fr"
 
 # Font
-font-family = "Noto Sans Thai Looped Light"
+font-family = "JetBrainsMono Nerd Font"
 font-size = 12
-font-feature = -liga
-font-feature = -calt
-font-feature = -dlig
+
+font-family-bold = auto
+font-family-italic = auto
+font-family-bold-italic = auto
+
+font-feature = liga
 
 # Colors
 theme = "Catppuccin Mocha"
 
 # Transparency and blur
-background-opacity = 0.3
+background-opacity = 0.3 
 background-blur = true
 cursor-opacity = 0.5
 cursor-color = "#8940e2"
@@ -21,22 +22,28 @@ alpha-blending = native
 # Aesthetic
 background = "#383b41"
 foreground = "#b2e0f0"
-window-padding-x = 15
-window-padding-y = 10 
+window-padding-x = 10
+window-padding-y = 10
 window-height = 25
 window-width = 90
 cursor-style = "block"
 cursor-style-blink = true
 adjust-cell-height = 9%
-mouse-scroll-multiplier = 0.5
+mouse-scroll-multiplier = 0.9
 minimum-contrast = 2
+scrollback-limit = 2000
+focus-follows-mouse = true
 mouse-hide-while-typing = true
 bold-color = "#90AAF9"
 
-# Bar
-title = "我是帅哥"
-window-title-font-family = "MonaLisa Variable"
-window-decoration = true
+# General
+window-decoration = false
+bell-features = no-audio
+confirm-close-surface = false
+resize-overlay = never
+gtk-toolbar-style = flat
+shell-integration-features = no-cursor,ssh-env
+async-backend = epoll
 
 # Shortcuts
 keybind = ctrl+t=new_tab

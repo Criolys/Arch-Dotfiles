@@ -4,9 +4,6 @@ config:
   create: true
   dotpath: .
   ignoreempty: false
-  keepdot: false
-  longkey: false
-  showdiff: false
 dotfiles:
   f_ghostty:
     src: .config/ghostty/config.ghostty
@@ -39,18 +36,23 @@ dotfiles:
   f_settings_wallpaper-effect:
     src: config/ml4w/settings/wallpaper-effect
     dst: ~/.config/ml4w/settings/wallpaper-effect
+  d_ml4w:
+    src: .config/ml4w
+    dst: ~/.config/ml4w
+  f_terminal.sh:
+    src: .config/ml4w/settings/terminal.sh
+    dst: ~/.config/ml4w/settings/terminal.sh
+    chmod: '755'
 profiles:
   home:
     dotfiles:
     - f_ghostty
-    - f_ml4w-wallpaper
-    - f_wallpaper-folder
-    - f_wallpaper-automation
-    - f_wallpaper-effect
-  -p home:
+    - d_ml4w
+    - f_terminal.sh
+  ghostty:
     dotfiles:
-    - f_config.ghostty
-    - f_scripts_ml4w-wallpaper
-    - f_settings_wallpaper-folder
-    - f_settings_wallpaper-automation
-    - f_settings_wallpaper-effect
+    - f_ghostty
+    - f_terminal.sh
+  ml4w-wallpaper:
+    dotfiles:
+    - d_ml4w

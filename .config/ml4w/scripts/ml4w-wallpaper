@@ -101,7 +101,7 @@ while [[ $# -gt 0 ]]; do
                 IMAGE_PATH=$(find "$RANDOM_FOLDER" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.mp4" -o -iname "*.webm" \) | shuf -n 1)
                 
                 if [[ -z "$IMAGE_PATH" ]]; then
-                    error "No valid images (jpg, jpeg, png) or videos (mp4, webm) found in -> $RANDOM_FOLDER"
+                    error "No valid images (jpg, jpeg, png) or videos (mp4, webm, mkv, avi, mov, flv) found in -> $RANDOM_FOLDER"
                     exit 1
                 fi
                 info "Random wallpaper selected: $IMAGE_PATH"

@@ -13,7 +13,7 @@ font-feature = liga
 theme = "Catppuccin Mocha"
 
 # Transparency and blur
-background-opacity = 0.3 
+background-opacity = 0.1
 background-blur = true
 cursor-opacity = 0.5
 cursor-color = "#8940e2"

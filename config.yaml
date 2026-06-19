@@ -5,12 +5,12 @@ config:
   dotpath: .
   ignoreempty: false
 dotfiles:
-  f_ghostty:
-    src: .config/ghostty/config.ghostty
-    dst: ~/.config/ghostty/config.ghostty
-  f_config.ghostty:
-    src: config/ghostty/config.ghostty
-    dst: ~/.config/ghostty/config.ghostty
+  f_kitty:
+    src: .config/kitty/kitty.conf
+    dst: ~/.config/kitty/kitty.conf
+  f_kitty-matugen:
+    src: .config/kitty/colors-matugen.conf
+    dst: ~/.config/kitty/colors-matugen.conf
   f_ml4w-wallpaper:
     src: .config/ml4w/scripts/ml4w-wallpaper
     dst: ~/.config/ml4w/scripts/ml4w-wallpaper
@@ -43,16 +43,31 @@ dotfiles:
     src: .config/ml4w/settings/terminal.sh
     dst: ~/.config/ml4w/settings/terminal.sh
     chmod: '755'
+  d_hypr:
+    src: .config/hypr
+    dst: ~/.config/hypr
+  f_default.lua:
+    src: .config/hypr/conf/decorations/default.lua
+    dst: ~/.config/hypr/conf/decorations/default.lua
+  f_fastfetch:
+    src: .config/fastfetch/config.jsonc
+    dst: ~/.config/fastfetch/config.jsonc
 profiles:
   home:
     dotfiles:
-    - f_ghostty
     - d_ml4w
     - f_terminal.sh
-  ghostty:
+    - f_default.lua
+    - f_fastfetch
+    - f_kitty
+    - f_kitty-matugen
+  kitty:
     dotfiles:
-    - f_ghostty
-    - f_terminal.sh
+    - f_kitty
+    - f_kitty-matugen
   ml4w-wallpaper:
     dotfiles:
     - d_ml4w
+  hypr:
+    dotfiles:
+    - d_hypr

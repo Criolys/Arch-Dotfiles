@@ -17,16 +17,13 @@ If you want to apply the whole repo:
 * *cd ~/.dotfiles*
 * *dotdrop install -p home* (-p for profile and home is the profile for everything, you can check in [config.yaml](config.yaml))
 
-### For Ghostty  
-By default, Hyprland/ML4W uses [kitty](https://github.com/kovidgoyal/kitty) as default terminal emulator, if you want, you can change it to [ghostty](https://github.com/ghostty-org/ghostty), if you don't want (you don't use Ghostty or don't want to set as default, skip this part)
+### For Kitty
 * *cd ~/.dotfiles*
-* *dotdrop install -p ghostty*  
-
-If you see *"/home/$USER/.config/ml4w/settings/terminal.sh"*, it means set the default terminal as Ghostty.  
-The other one is to apply the Ghostty custom configurations.
+* *dotdrop install -p kitty*
+* Click 'y' to overwrite the original files
 
 ### For wallpaper (ML4W)  
-The default wallpaper is an animated wallpaper drawn/animated by [criolyss](https://www.instagram.com/criolyss/) (me, on Instagram) so you have to change it manually in the dotfiles.
+The default wallpaper is an animated wallpaper drawn/animated by [criolyss](https://www.instagram.com/criolyss/) (me, on Instagram) so you have to change it manually in the dotfiles in *~/.dotfiles/config/ml4w/scripts/ml4w-wallpaper* in default variables at *DEFAULT_WALLPAPER*.
 * Download your wallpaper (video or image, GIFs are probably not supported)
 * Move the wallpaper to *~/.config/ml4w/wallpapers*
 * *cd ~/.dotfiles*
@@ -38,5 +35,6 @@ The default wallpaper is an animated wallpaper drawn/animated by [criolyss](http
 * Dotdrop: https://github.com/deadc0de6/dotdrop/tree/master
 * Hyprland: https://github.com/hyprwm/hyprland
 * ML4W: https://github.com/mylinuxforwork/dotfiles
-* Ghostty: https://github.com/ghostty-org/ghostty
+* Kitty: https://github.com/kovidgoyal/kitty
 * mpvpaper: https://github.com/GhostNaN/mpvpaper
+* Fastfetch: https://github.com/fastfetch-cli/fastfetch

@@ -36,7 +36,6 @@
        {
            "type": "command",
            "key": "│{#38;2;240;238;233;48;2;80;95;101}  󱦟 OS Age  {#}{#keys}│",
-           "keyColor": "magenta",
            "text": "printf \"\\e[0m%s days\\e[0m\" \"$(( ($(date +%s) - $(stat -c %W /)) / 86400 ))\""
        },
        {

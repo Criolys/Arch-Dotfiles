@@ -59,8 +59,11 @@ dotfiles:
     src: .config/ml4w/settings/kitty-cursor-trail.conf
     dst: ~/.config/ml4w/settings/kitty-cursor-trail.conf
   f_keybindings_default.lua:
-    src: config/hypr/conf/keybindings/default.lua
+    src: .config/hypr/conf/keybindings/default.lua
     dst: ~/.config/hypr/conf/keybindings/default.lua
+  f_ml4w.lua:
+    src: .config/hypr/conf/ml4w.lua
+    dst: ~/.config/hypr/conf/ml4w.lua
 profiles:
   home:
     dotfiles:
@@ -73,6 +76,7 @@ profiles:
     - f_hypr_input.lua
     - f_kitty-cursor-trail.conf
     - f_keybindings_default.lua
+    - f_ml4w.lua
   kitty:
     dotfiles:
     - f_kitty

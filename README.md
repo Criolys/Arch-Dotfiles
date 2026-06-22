@@ -9,7 +9,7 @@ If you want to apply everything, you need to install:
 * [Dotdrop](https://github.com/deadc0de6/dotdrop/tree/master)
 * [Hyprland](https://github.com/hyprwm/hyprland)
 * [ML4W](https://github.com/mylinuxforwork/dotfiles)
-* [Ghostty](https://github.com/ghostty-org/ghostty)
+* [Kitty]( https://github.com/kovidgoyal/kitty)
 
 ## Usage
 ### For everything  
@@ -24,7 +24,7 @@ If you want to apply the whole repo:
 
 ### For wallpaper (ML4W)  
 The default wallpaper is an animated wallpaper drawn/animated by [criolyss](https://www.instagram.com/criolyss/) (me, on Instagram) so you have to change it manually in the dotfiles in *~/.dotfiles/config/ml4w/scripts/ml4w-wallpaper* in default variables at *DEFAULT_WALLPAPER*.
-* Download your wallpaper (video or image, GIFs are probably not supported)
+* Download your wallpaper (video or image, GIFs are not supported)
 * Move the wallpaper to *~/.config/ml4w/wallpapers*
 * *cd ~/.dotfiles*
 * *dotdrop install -p ml4w-wallpaper*

@@ -225,6 +225,8 @@ else
         # Use awww for image wallpapers
         info "Setting image wallpaper with awww: $IMAGE_PATH"
         info "Using wallpaper effect $SETTINGS_TRANSITION_EFFECT"
+        pkill -f mpvpaper
+        sleep 0.5
         awww img "$IMAGE_PATH" --transition-type $SETTINGS_TRANSITION_EFFECT
     fi
 fi

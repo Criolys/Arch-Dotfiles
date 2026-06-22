@@ -9,86 +9,93 @@
             "top": 0,
             "right": 2,
             "left": 1
+        },
+        "color": {
+            "1": "#92ffc0",
+            "2": "#5bea97"
         }
     },
     "display": {
         "separator": " "
     },
     "modules": [
-        {
-            "key": "╭───────────╮",
-            "type": "custom"
-        },
-        {
-            "key": "│ {#34} user    {#keys}│",
-            "type": "title",
-            "format": "{user-name}"
-        },
-        {
-            "key": "│ {#34}󰇅 hname   {#keys}│",
-            "type": "title",
-            "format": "{host-name}"
-        },
-        {
-            "type": "command",
-            "key": "│ {#34}󱦟 os age  {#keys}│",
-            "keyColor": "magenta",
-            "text": "printf \"\\e[0m%s days\\e[0m\" \"$(( ($(date +%s) - $(stat -c %W /)) / 86400 ))\""
-        },
-        {
-            "key": "│ {#34}󰅐 uptime  {#keys}│",
-            "type": "uptime"
-        },
-        {
-            "key": "│ {#34}{icon} distro  {#keys}│",
-            "type": "os"
-        },
-        {
-            "key": "│ {#34} kernel  {#keys}│",
-            "type": "kernel"
-        },
-        {
-            "key": "│ {#34} wm      {#keys}│",
-            "type": "wm"
-        },
-        {
-            "key": "│ {#34}󰇄 desktop {#keys}│",
-            "type": "de"
-        },
-        {
-            "key": "│ {#34} term    {#keys}│",
-            "type": "terminal"
-        },
-        {
-            "key": "│ {#34} shell   {#keys}│",
-            "type": "shell"
-        },
-        {
-            "key": "│ {#34}󰍛 cpu     {#keys}│",
-            "type": "cpu",
-            "showPeCoreCount": true
-        },
-        {
-            "key": "│ {#34}󰉉 disk    {#keys}│",
-            "type": "disk",
-            "folders": "/"
-        },
-        {
-            "key": "│ {#34} memory  {#keys}│",
-            "type": "memory"
-        },
-        {
-            "key": "├───────────┤",
-            "type": "custom"
-        },
-        {
-            "key": "│ {#34} colors  {#keys}│",
-            "type": "colors",
-            "symbol": "circle"
-        },
-        {
-            "key": "╰───────────╯",
-            "type": "custom"
-        }
-    ]
+       {
+           "key": "╭────────────╮",
+           "type": "custom"
+       },
+       {
+           "key": "│{#38;2;240;238;233;48;2;70;85;95}    User   {#}{#keys}│",
+           "type": "title",
+           "format": "{user-name}"
+       },
+       {
+           "key": "│{#38;2;240;238;233;48;2;75;90;98}  󰇅 HName   {#}{#keys}│",
+           "type": "title",
+           "format": "{host-name}"
+       },
+       {
+           "type": "command",
+           "key": "│{#38;2;240;238;233;48;2;80;95;101}  󱦟 OS Age  {#}{#keys}│",
+           "keyColor": "magenta",
+           "text": "printf \"\\e[0m%s days\\e[0m\" \"$(( ($(date +%s) - $(stat -c %W /)) / 86400 ))\""
+       },
+       {
+           "key": "│{#38;2;240;238;233;48;2;85;100;104}  󰅐 Uptime  {#}{#keys}│",
+           "type": "uptime"
+       },
+       {
+           "key": "│{#38;2;240;238;233;48;2;90;105;107}  {icon} Distro  {#}{#keys}│",
+           "type": "os"
+       },
+       {
+           "key": "│{#38;2;240;238;233;48;2;95;110;110}   Kernel  {#}{#keys}│",
+           "type": "kernel"
+       },
+       {
+           "key": "│{#38;2;240;238;233;48;2;100;115;113}     WM    {#}{#keys}│",
+           "type": "wm"
+       },
+       {
+           "key": "│{#38;2;240;238;233;48;2;102;117;114} 󰇄 Desktop  {#}{#keys}│",
+           "type": "de"
+       },
+       {
+           "key": "│{#38;2;240;238;233;48;2;105;120;116}    Term   {#}{#keys}│",
+           "type": "terminal"
+       },
+       {
+           "key": "│{#38;2;240;238;233;48;2;110;125;119}   Shell   {#}{#keys}│",
+           "type": "shell"
+       },
+       {
+           "key": "│{#38;2;240;238;233;48;2;115;130;122}   󰍛 CPU    {#}{#keys}│",
+           "type": "cpu",
+           "showPeCoreCount": true
+       },
+       {
+           "key": "│{#38;2;240;238;233;48;2;120;135;125}   󰉉 Disk   {#}{#keys}│",
+           "type": "disk",
+           "folders": "/"
+       },
+       {
+           "key": "│{#38;2;240;238;233;48;2;125;140;128}   Memory  {#}{#keys}│",
+           "type": "memory",
+           "percent": {
+           "type": 3     // Show both percentage number and bar
+           }
+       },
+       {
+           "key": "├────────────┤",
+           "type": "custom"
+       },
+       {
+           "key": "│{#38;2;240;238;233;48;2;130;145;130}   Colors  {#}{#keys}│",
+           "type": "colors",
+           "symbol": "circle"
+       },
+       {
+           "key": "╰────────────╯",
+           "type": "custom"
+       }
+   ]
 }

@@ -52,6 +52,15 @@ dotfiles:
   f_fastfetch:
     src: .config/fastfetch/config.jsonc
     dst: ~/.config/fastfetch/config.jsonc
+  f_hypr_input.lua:
+    src: .config/hypr/input.lua
+    dst: ~/.config/hypr/input.lua
+  f_kitty-cursor-trail.conf:
+    src: .config/ml4w/settings/kitty-cursor-trail.conf
+    dst: ~/.config/ml4w/settings/kitty-cursor-trail.conf
+  f_keybindings_default.lua:
+    src: config/hypr/conf/keybindings/default.lua
+    dst: ~/.config/hypr/conf/keybindings/default.lua
 profiles:
   home:
     dotfiles:
@@ -61,10 +70,14 @@ profiles:
     - f_fastfetch
     - f_kitty
     - f_kitty-matugen
+    - f_hypr_input.lua
+    - f_kitty-cursor-trail.conf
+    - f_keybindings_default.lua
   kitty:
     dotfiles:
     - f_kitty
     - f_kitty-matugen
+    - f_kitty-cursor-trail.conf
   ml4w-wallpaper:
     dotfiles:
     - d_ml4w

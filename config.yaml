@@ -64,6 +64,9 @@ dotfiles:
   f_ml4w.lua:
     src: .config/hypr/conf/ml4w.lua
     dst: ~/.config/hypr/conf/ml4w.lua
+  d_starter:
+    src: .config/waybar
+    dst: ~/.config/waybar
 profiles:
   home:
     dotfiles:
@@ -77,6 +80,7 @@ profiles:
     - f_kitty-cursor-trail.conf
     - f_keybindings_default.lua
     - f_ml4w.lua
+    - d_starter
   kitty:
     dotfiles:
     - f_kitty
@@ -88,3 +92,6 @@ profiles:
   hypr:
     dotfiles:
     - d_hypr
+  waybar:
+    dotfiles:
+    - d_starter

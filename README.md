@@ -31,6 +31,11 @@ The default wallpaper is an animated wallpaper drawn/animated by [criolyss](http
 * Click 'y' to overwrite the original files
 * *~/.config/ml4w/scripts/ml4w-wallpaper ~/.config/ml4w/wallpapers/"__your-wallpaper__"* To apply your wallpaper
 
+## To uninstall
+If you want to uninstall:
+* *dotdrop uninstall -p __profile-you-want__*
+It will uninstall and restore the previous changes (either the one you've configured or the originals).
+
 ## Credit
 * Dotdrop: https://github.com/deadc0de6/dotdrop/tree/master
 * Hyprland: https://github.com/hyprwm/hyprland
